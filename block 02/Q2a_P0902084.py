@@ -4,7 +4,7 @@
 card_number = [4,9,6,9,9,0,4,7,1,2,3,4,2,0,8,4]
 
 # Initialise the output list
-checking_number = [0] * len(card_number)
+processed_digits = [0] * len(card_number)
 
 # Initialise a variable for intermediate calculations
 result = 0
@@ -23,11 +23,11 @@ for position in range(len(card_number)):
             result = result - 9
 
         # Append the result to the output list 
-        checking_number[position] = result
+        processed_digits[position] = result
 
     # Otherwise, append the digit unchanged to the output list
     else:
-        checking_number[position] = card_number[position]
+        processed_digits[position] = card_number[position]
 
 # Print the output list
-print(checking_number)
+print(processed_digits)
