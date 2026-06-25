@@ -1,4 +1,4 @@
-# TMA02 Question 2a: Program that checks whether a credit/debit card number is valid.
+# Apply the Luhn algorithm to a credit or debit card number
 
 # Initialise a list containing the 16 digits of the card number
 card_number = [4,9,6,9,9,0,4,7,1,2,3,4,2,0,8,4]
